@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>inDoing - Keep track of your tasks!</title>
+    <link rel="shortcut icon" href="./assets/images/2.png" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Baloo+Chettan+2:wght@400;500;600;700;800&family=Comfortaa:wght@300;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+<body>
+    <header>
+        <nav>
+            <img src="./assets/images/3.png" alt="Logo Horizontal">
+            <div>
+                <input type="search" name="searchbar" id="searchbar" placeholder="Search">
+                <button type="submit"><span class="material-symbols-outlined">search</span></button>
+            </div>
+            <div>
+                <button><span class="material-symbols-outlined">help</span></button>
+            </div>
+            <div>
+                <h3>Chris Hempson</h3>
+                <img src="./assets/images/profilepic.png" alt="Profile picture" width="80px"> 
+            </div>
+        </nav>
+    </header>
+    <aside>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Stats</a></li>
+            <li><a href="#">Calendar</a></li>
+        </ul>
+        <ul>
+            <li><a href="#">Settings</a></li>
+            <li><a href="#">Log out</a></li>
+        </ul>
+    </aside>
+    <main>
+        <h1>To-Do List</h1>
+        <div class="form-group">
+            <div class="form-input">
+                <input type="text" name="tasks" id="tasks" placeholder="Clean up my bedroom">
+                <input type="datetime" name="taskTime" id="taskTime" placeholder="03:05pm">
+                <input type="text" name="taskDescription" id="taskDescription"
+                    placeholder="Brief description of the task">
+            </div>
+            <div class="form-button">
+                <button class="add">Add</button>
+                <button class="deleteAll">Delete All</button>
+            </div>
+        </div>
+        <div>
+            <div>
+                <p>Esto es un parrafo</p>
+            </div>
+            <!--This space is for the taskss-->
+        </div>
+    </main>
+</body>
+<script src="./assets/js/main.js"></script>
+
+</html>
