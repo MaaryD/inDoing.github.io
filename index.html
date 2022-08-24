@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>inDoing - Keep track of your tasks!</title>
     <link rel="shortcut icon" href="./assets/images/2.png" type="image/x-icon">
-    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -15,55 +15,67 @@
         rel="stylesheet">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 
 <body>
     <header>
         <nav>
-            <img src="./assets/images/3.png" alt="Logo Horizontal">
             <div>
+                <img src="./assets/images/3.png" alt="Logo Horizontal">
+            </div>
+            <form>
                 <input type="search" name="searchbar" id="searchbar" placeholder="Search">
-                <button type="submit"><span class="material-symbols-outlined">search</span></button>
-            </div>
-            <div>
-                <button><span class="material-symbols-outlined">help</span></button>
-            </div>
-            <div>
+            </form>
+            <!-- <div class="profilePic">
                 <h3>Chris Hempson</h3>
-                <img src="./assets/images/profilepic.png" alt="Profile picture" width="80px"> 
-            </div>
+                <img src="./assets/images/profilepic.png" alt="Profile picture" width="80px">
+            </div> -->
         </nav>
     </header>
     <aside>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Stats</a></li>
-            <li><a href="#">Calendar</a></li>
-        </ul>
-        <ul>
-            <li><a href="#">Settings</a></li>
-            <li><a href="#">Log out</a></li>
-        </ul>
+        <div class="navbar">
+            <div>
+                <ul>
+                    <li><a href="#"><span class="material-symbols-rounded">home</span>Home</a><li>
+                    <li><a href="#"><span class="material-symbols-rounded">trending_up</span>Stats</a></li>
+                    <li><a href="#"><span class="material-symbols-rounded">today</span>Calendar</a></li>
+                    <li><a href="#"><span class="material-symbols-rounded">help</span>Help</a></li>
+                </ul>
+            </div>
+            <div class="lastPlaces navbar">
+                <ul>
+                    <li><a href="#"><span class="material-symbols-rounded">settings</span>Settings</a></li>
+                    <li><a href="#"><span class="material-symbols-rounded">logout</span>Log out</a></li>
+                </ul>
+            </div>
+        </div>
     </aside>
     <main>
         <h1>To-Do List</h1>
+        <p id="today"></p>
         <div class="form-group">
             <div class="form-input">
-                <input type="text" name="tasks" id="tasks" placeholder="Clean up my bedroom">
-                <input type="datetime" name="taskTime" id="taskTime" placeholder="03:05pm">
-                <input type="text" name="taskDescription" id="taskDescription"
+                <input type="text" name="tasks" id="taskInput" placeholder="Name of the task">
+                <input type="datetime" name="taskTime" id="taskTimeInput" placeholder="Hour">
+                <input type="text" name="taskDescription" id="taskDescriptionInput"
                     placeholder="Brief description of the task">
             </div>
             <div class="form-button">
-                <button class="add">Add</button>
-                <button class="deleteAll">Delete All</button>
+                <button class="add">ADD</button>
+                <button class="deleteAll">DELETE ALL</button>
             </div>
         </div>
-        <div>
-            <div>
-                <p>Esto es un parrafo</p>
+        <div class="tasksWriten" id="tasksWriten">
+            <!-- <div>
+                <h3>Task</h3>
+                <h5>Hour</h5>
+                <p>Description</p>
             </div>
-            <!--This space is for the taskss-->
+            <div>
+                <button class="edit" id="edit"></button>
+                <button class="delete" id="delete"></button>
+            </div> -->
         </div>
     </main>
 </body>

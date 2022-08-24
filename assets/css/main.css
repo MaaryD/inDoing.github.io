@@ -35,10 +35,6 @@ header nav ul li a {
     color: #F48C00;
 }
 
-header nav input {
-
-}
-
 /* Comienzo del ASIDE */
 
 aside {
@@ -46,7 +42,7 @@ aside {
     flex-direction: column;
     /* justify-content: space-around; */
     margin-left: 10rem;
-    align-content: center;
+    
 }
 
 aside div {
